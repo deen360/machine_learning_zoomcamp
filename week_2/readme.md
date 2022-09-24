@@ -1,0 +1,1 @@
+car mssp prediction project for ml-zoomcamp and housing prediction homework using linear regression, using only pandas and numpy 

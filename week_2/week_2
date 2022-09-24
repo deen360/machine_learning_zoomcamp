@@ -1,0 +1,53 @@
+get data
+eda 
+linear regression
+evaluating rmse 
+feature  engineering
+regularization
+using the model
+
+
+#download data
+#load data 
+#clean data
+		 -> spacers in headers can be replaced with underscore 
+					df. columns -> returns all the heads of the columns 
+					
+		-> #add "_" to all the empty spaces in column names
+			df.columns = df.columns.str.lower().str.replace(' ', '_')
+	
+		
+		#list all the elements that have type object and their index
+			string_columns = list(df.dtypes[df.dtypes == 'object'].index)
+
+
+linear regression:
+		y = f(x) + E
+		y = predicted output variable (actual)
+		f(x) = unknown function (linear regression estimate) that helps to get the relationship between x and y 
+		E = error term inidependent of covariates x also called irreducible error
+		
+		f(x) =B0 + B1x
+		
+		ȳ = estimate/prediction
+		ȳ = B_0 + B1_x
+		linear regression helps to calculate B_0 + B1_x based on given data
+		
+		residual error(e) = y - ȳ 
+		rss = sum of all squared residuals for each error  -> argmin B0 and B1  £(y - ȳ )²
+		B0 and B1 are values that minimizes error squares
+		
+		
+		
+		
+
+#to add 2 datafram, use (dont forget to concact y too after x)
+df_full = pd.concat([df_train, df_val])
+#to reset their index
+#df_full.rest_index(drop=True)
+
+
+to test value from non dataframe
+turn it to a dictionary using to_dict() eg tabl = vaxx.to_dict()
+convert it to dataframe using pd.Dataframe([tabl])
+
