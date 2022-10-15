@@ -1,0 +1,13 @@
+
+load model 
+to dict 
+dv. fit (only fitted model)
+dv .transform for (for all)
+import model
+model.fit 
+model. predict
+#dont forget to delete your y_train etc 
+
+
+general ml algo 
+
